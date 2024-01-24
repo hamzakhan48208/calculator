@@ -1,0 +1,38 @@
+<div class="temperature-calculator">
+
+  <div class="history"></div>
+  <div class="selection">
+    <div class="container">
+      <div class="row">
+        <p>Celcius</p>
+        <input type="text" id="amount-one" placeholder="0" [(ngModel)]="celciusText" (click)="changeActive('celcius')" oninput="this.value=this.value.replace(/[^0-9+\-*/().&.%]/g, '').replace(/(\..*)\./g, '$1');"/>
+      </div>
+
+      <div class="row">
+       <p>Farenheit</p>
+        <input type="text" id="amount-two" placeholder="0" [(ngModel)]="farenheitText"  (click)="changeActive('farenheit')" oninput="this.value=this.value.replace(/[^0-9+\-*/().&.%]/g, '').replace(/(\..*)\./g, '$1');"/>
+      </div>
+
+      <div class="row">
+        <p>Kelvin</p>
+         <input type="text" id="amount-two" placeholder="0"  [(ngModel)]="kelvinText" (click)="changeActive('kelvin')" oninput="this.value=this.value.replace(/[^0-9+\-*/().&.%]/g, '').replace(/(\..*)\./g, '$1');"/>
+       </div>
+    </div>
+
+  </div>
+  <div class="calculator__keys">
+    <button class="calculator__key" (click)="keyPressed('7')">9</button>
+    <button class="calculator__key" (click)="keyPressed('8')">8</button>
+    <button class="calculator__key"(click)="keyPressed('9')">7</button>
+    <button class="calculator__key" (click)="keyPressed('4')">6</button>
+    <button class="calculator__key" (click)="keyPressed('5')">5</button>
+    <button class="calculator__key" (click)="keyPressed('6')">4</button>
+    <button class="calculator__key" (click)="keyPressed('1')">3</button>
+    <button class="calculator__key" (click)="keyPressed('2')">2</button>
+    <button class="calculator__key" (click)="keyPressed('3')">1</button>
+    <button class="calculator__key" (click)="keyPressed('0')">0</button>
+    <button class="calculator__key" (click)="keyPressed('.')">.</button>
+    <button class="calculator__key" (click)="clear()">AC</button>
+    <button class="calculator__key calculator__key--enter" (click)="calculate()">=</button>
+  </div>
+</div>

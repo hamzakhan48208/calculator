@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'calculator';
+  selectedTab = 'Standard';
+
+  onChangedTab(tabName: string){
+    this.selectedTab = tabName;
+  }
 }

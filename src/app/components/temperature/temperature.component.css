@@ -1,0 +1,78 @@
+.temperature-calculator {
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15), 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  margin-block-start: 6em;
+  max-inline-size: 22rem;
+  overflow: hidden;
+  color: hsl(202, 11%, 29%);
+  width: 50rem;
+
+  background: hsl(255, 100%, 100%);
+  padding: 30px 35px 10px 35px;
+
+
+  font-family: 'Poppins';
+}
+.temperature-calculator input {
+  font-family: 'Poppins';
+  font-size: 1.2rem;
+}
+
+.temperature-calculator .calculator__keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1px;
+  background: hsl(255, 100%, 100%);
+  padding: 0.5rem;
+}
+.temperature-calculator .calculator__key {
+  background: hsl(210, 25%, 95%);
+  border: none;
+  padding-block-start: 1rem;
+  padding-block-end: 1rem;
+  padding-inline-end: 1.25rem;
+  padding-inline-start: 1.25rem;
+  font-size: 1.5rem;
+  /* Playful Styles */
+  inline-size: 70px;
+  block-size: 70px;
+  margin: 0.25rem;
+  border-radius: 40px;
+}
+.temperature-calculator .calculator__key:active,
+.temperature-calculator .calculator__key:focus {
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3) inset;
+  outline: none;
+}
+.temperature-calculator .calculator__key--operator {
+  background: hsl(208, 25%, 86%);
+}
+.temperature-calculator .calculator__key--operator:active {
+  background: hsl(208, 24%, 80%);
+}
+.temperature-calculator .calculator__key--enter {
+  grid-column: 4 / 5;
+  grid-row: 2 / span 4;
+  background: hsl(357, 100%, 72%);
+  height: auto;
+}
+
+.temperature-calculator .calculator .history{
+  width: 98%;
+  margin-right: 20px;
+  display: flex;
+  justify-content: flex-end;
+  background-color: hsl(255, 100%, 100%);
+}
+
+button{
+  cursor: pointer;
+}
+
+.row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
